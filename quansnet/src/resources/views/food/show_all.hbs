@@ -1,0 +1,25 @@
+<div class="mt-4">
+    <div class="container">
+        <h2 class="text-white">Food</h2>
+
+        <div class="row g-4">    
+            {{#each fooddrink}}
+            <div class="col-lg-3">
+                <div class="card" >
+                    <a href="/food/{{this.id_fooddrink}}">
+                        <img class="card-img-top card-img rounded" src="{{this.image}}" alt="Card image cap" height="200px" >
+                    </a>
+                    <div class="card-body">
+                        <a href="/food/1">
+                            <h5 class="card-title">{{this.name}}</h5>
+                        </a>
+                        <p class="price">{{this.price}}VND</p>
+                        <a href="/food/{{this.id_fooddrink}}/orders" class="btn btn-primary">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    
+</div>

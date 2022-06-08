@@ -1,0 +1,42 @@
+<div class="mt-4">
+    <div class="container p-5 bg-light border border-3 rounded">
+        <div class='mt-4'>
+            <h3>Đơn Hàng</h3>
+            <form method="POST" action="/food/store">
+                
+                <a href="/food/{{fooddrink.id_fooddrink}}">
+                            <img class="card-img-top card-img rounded" src="{{fooddrink.image}}" alt="Card image cap" height="200px" >
+                </a>
+                <a href="/food/{{foooddrink.id_fooddrink}}">
+                    <h5 class="card-title">{{fooddrink.name}}</h5>
+                </a>
+                <p class="price">Giá : {{fooddrink.price}} VND</p>
+
+                <div class="form-floating mb-3">
+                    <label for="account_player">Tài Khoản</label>
+                    <input type="text" class="form-control" id="account_player" name="account_player">
+                    
+                </div>
+                <div class="form-floating">
+                    <label for="password_player">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="password_player" name="password_player">
+                    
+                </div>      
+                <div class="form-group">
+                    <label for="id_fooddrink ">Mã sản phẩm</label>
+                    <input type="number" class="form-control" id="id_fooddrink " name="id_fooddrink" value={{{fooddrink.id_fooddrink}}}>
+                </div>
+                <div class="form-group">
+                    <label for="computerNumber">Máy Tính</label>
+                    <input type="text" class="form-control" id="computerNumber" name="computerNumber">
+                </div>
+                <div class="form-group">
+                    <label for="note">Ghi chú</label>
+                    <input type="text" class="form-control" id="note" name="note">
+                </div>
+
+                <button type="submit" class="btn btn-primary" >Mua Ngay</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="margin-2rem margin-left-4rem">
+    <h3 class="text-white">Đơn Hàng</h3>
+    <div class=" mb-3" style="max-width: 100%; height: 100%">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src="{{fooddrink.image}}" class="img-fluid rounded-start" alt="Card image cap">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body margin-left-4rem">
+                    <p class="text-white">Id Order      : {{order.id_order}}</p>
+                    <p class="text-white">Id Tài Khoản  : {{customers.account_player}}</p>
+                    <p class="text-white">Tên sản phẩm  : {{fooddrink.name}}</p>
+                    <p class="text-white">Giá           : {{fooddrink.price}} VND</p>
+                    <p class="text-white">Máy Tính      : {{order.computerNumber}}</p>
+                    <p class="text-white">Ghi Chú       : {{order.note}}</p>
+                    <p class="text-white">Số tiền còn dư: {{customers.currentBalance}} VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
